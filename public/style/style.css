@@ -1,0 +1,1100 @@
+/* Global settings */
+/* Mode clair par défaut */
+body {
+  font-family: "Verdana", sans-serif;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  background-color: #e8f0f5; /* Fond doux bleu clair */
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+a {
+  text-decoration: none;
+}
+/* Mode sombre global */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Changer la couleur des liens */
+.dark-mode a {
+  color: #00bcd4; /* Bleu clair */
+  text-decoration: none;
+}
+
+.dark-mode a:hover {
+  color: #ffeb3b; /* Jaune */
+}
+
+.dark-mode .form-container {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+.dark-mode .containerConnexionAdmin {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-radius: 8px; /* Coins arrondis des champs */
+}
+.dark-mode input[type="text"] {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+/* Changer la couleur des boutons */
+.dark-mode button,
+.dark-mode input[type="submit"],
+.dark-mode input[type="file"] {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* Changer la couleur des champs de formulaire */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.dark-mode select:hover {
+  background-color: #222;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* Changer la couleur des tableaux */
+.dark-mode table {
+  background-color: #222;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.dark-mode th,
+.dark-mode td {
+  border: 1px solid #ffffff;
+}
+
+/* Changer la couleur des cartes ou blocs */
+.dark-mode .card,
+.dark-mode .box,
+.dark-mode .container {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+/* Assurer une transition fluide */
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Appliquer le mode sombre aux sections */
+.dark-mode section {
+  background-color: #2a2a2a !important; /* Fond sombre pour les sections */
+  color: #ffffff !important; /* Texte en blanc */
+  border: 1px solid #444; /* Bordure claire (si nécessaire) */
+}
+
+/* Si tu veux appliquer à des sections spécifiques avec une classe */
+.dark-mode .section-classe {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+}
+
+/* Mode sombre */
+.dark-mode {
+  background-color: #333;
+  color: #e8f0f5;
+}
+
+/* Style du bouton */
+#darkModeToggle {
+  position: fixed; /* Fixe le bouton par rapport à la fenêtre */
+  bottom: 10px; /* Positionne à 20px du bas de la fenêtre */
+  right: 10px; /* Positionne à 20px du côté droit de la fenêtre */
+  padding: 10px 15px; /* Ajoute un peu de padding autour du texte */
+  background-color: #ddd; /* Fond clair */
+  border: none; /* Enlève la bordure */
+  border-radius: 5px; /* Arrondit les coins */
+  cursor: pointer; /* Change le curseur quand on survole */
+  z-index: 9999; /* Assure que le bouton est au-dessus des autres éléments */
+}
+
+/* Quand le mode sombre est activé, change l'apparence du bouton */
+.dark-mode #darkModeToggle {
+  background-color: #444;
+  color: #fff;
+  content: "☀️ mode claire"; /* Icône soleil en mode sombre */
+}
+
+#darkModeToggle:hover {
+  background-color: #ccc;
+}
+.dark-mode .cart-container h1 {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+.dark-mode .cart-container .item-details h2 {
+  margin: 0;
+  color: #ffffff !important;
+  font-size: 18px;
+}
+
+.dark-mode .item-details p {
+  margin: 5px 0;
+  color: #ffffff !important;
+}
+.dark-mode .remove-btn {
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.dark-mode .NbPage li {
+  background-color: #393939;
+  color: #ccc;
+}
+.dark-mode .NbPage .active {
+  background-color: darkblue;
+  color: white;
+}
+.dark-mode .NbPage li:hover {
+  background-color: white;
+  color: #393939;
+}
+.dark-mode .ChiffrePage {
+  text-decoration: none;
+}
+.dark-mode nav#menu ul li a {
+  background-color: #1f2937;
+  color: #fff;
+}
+.dark-mode nav#menu_haut ul li a {
+  background-color: #1f2937;
+  color: #fff;
+}
+.dark-mode .main-content {
+  background-color: #2a2a2a;
+}
+.dark-mode .submenu li {
+  background: #34495e;
+  border-left: 3px solid #0073b7;
+  cursor: pointer;
+}
+
+.dark-mode .submenu li a {
+  color: white;
+  text-decoration: none;
+}
+.dark-mode .sidebar {
+  background: #222d32;
+  color: white;
+}
+.dark-mode .sidebar ul li:hover,
+.sidebar ul .active {
+  background: #1a2226;
+}
+.dark-mode footer {
+  background-color: #1f2937; /* Fond sombre */
+  text-align: center;
+  color: #e0f7fa;
+  position: fixed; /* Le positionnement est fixe */
+  bottom: 0; /* Colle le footer au bas de la page */
+  left: 0; /* L'ancre à gauche */
+  width: 100%; /* Occupe toute la largeur de la page */
+  height: 50px; /* Hauteur fixe */
+}
+/* fin dark mode */
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #005c99, #0099cc); /* Dégradé bleu */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre forte */
+}
+
+.titre_pricipale {
+  display: flex;
+  align-items: center;
+}
+
+.titre_pricipale img {
+  width: 60px;
+  margin-right: 20px;
+  border-radius: 50%; /* Image ronde pour un effet stylé */
+  border: 2px solid #fff;
+}
+
+.titre_pricipale h1 {
+  color: #e0f7fa; /* Blanc cassé clair */
+  font-size: 36px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre pour le texte */
+}
+/*menu recherche*/
+.form_search {
+  margin-top: 0;
+}
+.search-container {
+  display: flex;
+  background: #ffffff;
+  border-radius: 20px;
+  width: 250px;
+  height: 36px; /* Ajusté pour correspondre à Windows 11 */
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Icône de recherche */
+.search-container i {
+  color: white;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Champ de recherche */
+#search-bar {
+  border: none;
+  background: transparent;
+  color: #333;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  font-family: Arial, sans-serif;
+  padding-left: 2px;
+  /* Correction d'alignement */
+  padding: 10px 0; /* Ajuste le padding */
+  height: 100%; /* Prend toute la hauteur */
+  line-height: 1; /* Réduit l'espacement interne */
+  display: flex;
+  align-items: center; /* Assure un centrage du texte */
+}
+
+/* Placeholder bien centré */
+#search-bar::placeholder {
+  color: #333;
+  opacity: 1; /* S'assure que le placeholder est visible */
+  font-size: 14px;
+  padding: 2px 0; /* Ajuste le padding */
+}
+
+/* fin menu recherche*/
+/* Menu haut */
+nav#menu_haut {
+  background-color: transparent;
+}
+
+nav#menu_haut ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+nav#menu_haut ul li {
+  display: inline;
+}
+
+nav#menu_haut ul li a {
+  text-decoration: none;
+  color: #e0f7fa;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1); /* Légère transparence */
+  border: 2px solid transparent;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+nav#menu_haut ul li a:hover {
+  background-color: #e0f7fa; /* Blanc au survol */
+  color: #005c99; /* Bleu foncé */
+  border-color: #0099cc; /* Bordure bleu clair au survol */
+}
+
+/* menu principal*/
+.TitreMenuCategorie {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.imgCategorie {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+nav#menu h1 {
+  color: #e0f7fa;
+  font-size: 28px;
+  font-weight: bold;
+
+  cursor: pointer; /*Change le curseur pour indiquer que c'est cliquable */
+}
+nav#menu {
+  background: linear-gradient(135deg, #005c99, #0099cc);
+  border: 3px solid #004d7a;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 500px;
+  text-align: center;
+  transition: height 0.3s ease; /* Animation pour la transition de hauteur */
+  display: flex;
+  flex-direction: column; /* Alignement en colonne */
+  align-items: center; /* Centre les éléments */
+  transition: all 0.05s ease-in-out;
+}
+#menuList {
+  display: none; /* Le menu est caché par défaut */
+}
+nav#menu.retracte {
+  background: linear-gradient(135deg, #005c99, #0099cc);
+  border: 3px solid #004d7a;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 1000px;
+  text-align: center;
+  transition: height 0.3s ease; /* Animation pour la transition de hauteur */
+  display: flex;
+  flex-direction: column; /* Alignement en colonne */
+  align-items: center; /* Centre les éléments */
+  transition: all 0.05s ease-in-out;
+}
+
+nav#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Pour aligner les éléments en ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+nav#menu ul li {
+  margin: 0 10px; /* Espace entre les éléments */
+}
+
+nav#menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px; /* Taille de la police */
+  font-weight: bold;
+  padding: 10px 20px; /* Espace autour des liens */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Fond sombre pour les éléments de menu */
+  border-radius: 8px; /* Coins arrondis */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav#menu ul li a:hover {
+  background-color: #e0f7fa; /* Couleur au survol */
+  color: #005c99; /* Couleur du texte au survol */
+}
+
+/* Sections principales */
+section {
+  background-color: #e0f7fa; /* Fond bleu clair */
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1150px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  border: 2px solid #0099cc; /* Bordure subtile */
+}
+
+section h2 {
+  color: #005c99; /* Bleu foncé */
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Container qui contient les articles */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permet d'aller à la ligne si nécessaire */
+  justify-content: space-around; /* Distribution égale des articles */
+  gap: 15px; /* Espace entre les articles */
+  align-items: stretch; /* Assure que tous les articles ont la même hauteur */
+}
+
+/* Image produit */
+
+/* Assurer un alignement propre dans le texte */
+aside {
+  flex-grow: 1; /* Permet au contenu de remplir l'espace disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alignement vertical uniforme */
+}
+
+/* Bouton "Ajouter au panier" reste en bas */
+
+/* Les articles eux-mêmes */
+article {
+  background-color: #f4f4f4; /* Couleur de fond pour mieux les visualiser */
+  padding: 10px;
+  border-radius: 8px;
+  width: 22%; /* Largeur de chaque article réduite */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f4f4f4; /* Couleur de fond pour mieux les visualiser */
+  display: flex;
+  justify-content: space-between; /* Aligne les éléments à l'intérieur de manière uniforme */
+  text-align: center;
+  justify-content: space-between; /* Distribution uniforme verticale */
+  height: 600px; /* Hauteur minimale ajustée pour harmoniser */
+}
+
+/* Image produit */
+.img_produit {
+  width: 70%; /* L'image occupe toute la largeur de l'article */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  max-height: 150px; /* Fixe une hauteur maximale pour harmoniser les images */
+  object-fit: cover; /* Gère les proportions des images pour éviter les déformations */
+  flex-grow: 1; /* Permet au contenu de remplir l'espace disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alignement vertical uniforme */
+}
+/* mettre la div quantiteDiv en bas de la div ArtileVueProduit  */
+.quantiteDiv {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 25px;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  align-self: center;
+}
+/* Bouton Ajouter au panier */
+.containerCommandeRemerciment {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.titreCommandeRemerciment {
+  color: #0070aa;
+}
+
+.btnReturnAccueil {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0070aa;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btnReturnAccueil:hover {
+  background-color: #0070aa;
+}
+.btn_panier {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070aa;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  align-self: center;
+}
+.NbPage {
+  display: flex;
+  justify-content: center; /* Centre la pagination horizontalement */
+  margin-top: 20px; /* Espacement au-dessus */
+}
+
+.NbPage ul {
+  display: flex;
+  gap: 10px; /* Espacement entre les éléments */
+  list-style: none; /* Supprime les puces */
+  padding: 0;
+}
+
+.ChiffrePage {
+  padding: 10px 15px;
+  background-color: #393939;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.ChiffrePage:hover {
+  background-color: #ccc;
+}
+.NbPage {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.NbPage ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.NbPage li {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.NbPage li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.NbPage li:hover {
+  background-color: #ccc;
+  color: #393939;
+}
+
+/* Page sélectionnée en bleu */
+.NbPage .active {
+  background-color: darkblue;
+  color: white;
+}
+
+/* Effet hover */
+.btn_panier:hover {
+  background-color: #0070aa;
+  transform: scale(1.05);
+}
+
+/* Texte animé (widget-like effect) */
+.btn_panier span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Animation d'onde */
+.btn_panier::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: 0;
+}
+
+.btn_panier:hover::before {
+  width: 200%;
+  height: 200%;
+}
+/* Conteneur de la quantité */
+aside div {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Label de la quantité */
+aside label {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+}
+.hidden {
+  display: none;
+}
+
+/* Champ de saisie de quantité */
+aside input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  font-size: 1.2em;
+  text-align: center;
+  border: 2px solid #0070aa;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+/* Effet au focus */
+aside input[type="number"]:focus {
+  outline: none;
+  border-color: #0070aa;
+  box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+}
+
+/* Adaptation sur écrans plus petits */
+@media (max-width: 768px) {
+  article {
+    width: 30%; /* Plus petit sur tablettes */
+  }
+}
+
+@media (max-width: 480px) {
+  article {
+    width: 48%; /* Prend la moitié de l'écran sur mobiles */
+  }
+}
+
+@media (max-width: 320px) {
+  article {
+    width: 100%; /* Prend toute la largeur sur très petits écrans */
+  }
+}
+
+/* Conteneur global pour les produits */
+/* Section VueProduit */
+.VueProduit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Article VueProduit */
+.ArtileVueProduit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ArtileVueProduit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image du produit */
+
+/* Aside contenant les informations */
+.ArtileVueProduit aside {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Titres et description */
+.ArtileVueProduit h1 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.ArtileVueProduit h3 {
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #666;
+}
+
+.ArtileVueProduit p {
+  font-size: 1em;
+  color: #999;
+  margin: 10px 0;
+}
+
+/* Prix */
+.ArtileVueProduit h3:last-of-type {
+  font-size: 1.4em;
+  color: #0070aa;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Bouton ajouter au panier */
+.img_panier {
+  width: 40px;
+  height: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.img_panier:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .VueProduit {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ArtileVueProduit {
+    width: 90%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #0077b0; /* Fond sombre */
+  text-align: center;
+  color: #e0f7fa;
+  position: fixed; /* Le positionnement est fixe */
+  bottom: 0; /* Colle le footer au bas de la page */
+  left: 0; /* L'ancre à gauche */
+  width: 100%; /* Occupe toute la largeur de la page */
+  height: 50px; /* Hauteur fixe */
+  z-index: 1000; /* Assure que le footer est au-dessus des autres éléments */
+}
+
+footer nav {
+  margin-top: 20px;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer nav ul li {
+  display: inline-block;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #e0f7fa;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+  color: #0099cc; /* Bleu clair au survol */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header,
+  nav#menu,
+  section {
+    padding: 15px;
+  }
+
+  nav#menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav#menu_haut ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.cart-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+}
+
+.cart-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.item-details h2 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.item-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.remove-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #e60000;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-summary h3 {
+  margin: 0;
+  color: #333;
+}
+
+.checkout-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.checkout-btn:hover {
+  background-color: #45a049;
+}
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  background-color: #45a049;
+}
+.message-erreur {
+  background: url(../images/pasOK.png) 10px center no-repeat;
+  padding: 0 0 0 30px;
+  display: inline;
+  color: #b30202;
+}
+.message-ok {
+  background: url(../images/OK.png) 10px center no-repeat;
+  padding: 0 0 0 30px;
+  display: inline;
+  color: #8fcf3c;
+  font-weight: bold;
+}
+/* media part*/
+
+/* Responsive */
+/* Ajout des media queries pour le responsive */
+
+/* Pour les tablettes et petits écrans */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  nav#menu {
+    width: 90%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 85%;
+    max-width: 800px;
+  }
+}
+
+/* Pour les téléphones */
+@media screen and (max-width: 768px) {
+  .titre_principale h1 {
+    font-size: 22px;
+  }
+
+  nav#menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 95%;
+    padding: 20px;
+    max-width: 600px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .btn_panier {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+.cart-validation {
+  text-align: center;
+  margin-top: 20px;
+}
+.validate-btn {
+  background-color: #4CAF50; /* Vert */
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.validate-btn:hover {
+  background-color: #45a049;
+}
+
+/* Pour les très petits écrans (mobiles étroits) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .titre_principale img {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .titre_principale h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  nav#menu {
+    width: 100%;
+    padding: 10px;
+  }
+
+  nav#menu ul li {
+    margin: 5px 0;
+  }
+
+  .search-container {
+    width: 90%;
+  }
+
+  article {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .img_produit {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn_panier {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+}

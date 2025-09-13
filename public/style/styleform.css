@@ -1,0 +1,374 @@
+.admin-container {
+  display: flex;
+  align-items: flex-start; /* Alignement en haut */
+}
+section.admin {
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#admin-section {
+  display: none; /* Caché au départ */
+}
+
+.admin-content {
+  display: none; /* Toutes les sous-sections cachées */
+}
+
+h2 {
+  font-size: 24px;
+  color: linear-gradient(135deg, #005c99, #0099cc); /* Dégradé bleu */
+  margin-bottom: 20px;
+  border-bottom: 2px solid linear-gradient(135deg, #005c99, #0099cc); /* Dégradé bleu */
+  padding-bottom: 10px;
+}
+
+.titre {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: linear-gradient(135deg, #005c99, #0099cc); /* Dégradé bleu */
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+section.admin form {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: linear-gradient(135deg, #005c99, #0099cc); /* Dégradé bleu */
+}
+
+input[type="text"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cac0b3;
+  border-radius: 4px;
+  background-color: #eee;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.submenu {
+  display: none; /* Caché par défaut */
+  list-style: none;
+  margin: 0;
+}
+
+.submenu  li {
+  
+  background: #639ad1;
+  border-left: 3px solid #456d84;
+  cursor: pointer;
+}
+
+
+.submenu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+}
+
+.menu-item:hover {
+  background: #1abc9c;
+}
+
+input[type="submit"],
+.deconnexion {
+  background-color: #ff595a;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+input[type="submit"]:hover,
+.deconnexion:hover {
+  background-color: linear-gradient(
+    135deg,
+    #005c99,
+    #0099cc
+  ); /* Dégradé bleu */
+}
+
+.bouton_form {
+  background-color: #ff595a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.bouton_form:hover {
+  background-color: linear-gradient(
+    135deg,
+    #005c99,
+    #0099cc
+  ); /* Dégradé bleu */
+}
+
+select {
+  height: 40px;
+}
+
+.textdeconnexion {
+  text-align: center;
+}
+
+.deconnexion a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 24px;
+}
+
+.deconnexion a:hover {
+  background-color: linear-gradient(
+    135deg,
+    #005c99,
+    #0099cc
+  ); /* Dégradé bleu */
+  border-radius: 4px;
+}
+
+/* Category and Product Section */
+.Categorie,
+.produit {
+  margin-bottom: 40px;
+}
+
+.titre_modifier_ajouter_supp {
+  font-size: 20px;
+  color: linear-gradient(135deg, #005c99, #0099cc); /* Dégradé bleu */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+select,
+input[type="text"] {
+  transition: all 0.3s ease;
+}
+
+select:hover,
+input[type="text"]:hover {
+  border-color: linear-gradient(135deg, #005c99, #0099cc); /* Dégradé bleu */
+}
+
+.supprimerCategorie {
+  margin-top: 20px;
+}
+
+/* Add hover effect for category and product modification */
+select:hover {
+  background-color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: linear-gradient(
+    135deg,
+    #005c99,
+    #0099cc
+  ); /* Dégradé bleu */
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.SectionConnexionAdmin {
+  color: #3e1f7d; /* Couleur du texte */
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre pour un léger effet de profondeur */
+  padding: 30px; /* Espacement intérieur */
+  width: 400px; /* Largeur fixe du conteneur */
+  text-align: center; /* Centre le texte */
+}
+
+.titre {
+  font-size: 24px; /* Taille du texte du titre */
+  margin-bottom: 20px; /* Espace sous le titre */
+  color: #512da8; /* Couleur du texte du titre */
+}
+
+.containerConnexionAdmin {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+.input {
+  margin-bottom: 15px; /* Espace entre les champs */
+}
+
+label {
+  display: block; /* Chaque étiquette sur une nouvelle ligne */
+  margin-bottom: 5px; /* Espace sous chaque étiquette */
+  font-weight: 500; /* Poids du texte de l'étiquette */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Prend toute la largeur */
+  padding: 10px; /* Espacement intérieur */
+  border: 1px solid #ccc; /* Bordure gris clair */
+  border-radius: 8px; /* Coins arrondis des champs */
+  font-size: 14px; /* Taille du texte des champs */
+}
+
+input[type="submit"] {
+  background-color: #512da8; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  border: none; /* Pas de bordure */
+  padding: 10px; /* Espacement intérieur */
+  border-radius: 8px; /* Coins arrondis du bouton */
+  cursor: pointer; /* Curseur en forme de main au survol */
+  font-size: 16px; /* Taille du texte du bouton */
+  transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+input[type="submit"]:hover {
+  background-color: #3e1f7d; /* Couleur plus sombre au survol */
+}
+
+.connexion_auto {
+  margin: 10px 0; /* Espace autour de la section de connexion automatique */
+}
+
+.connexion_auto label {
+  display: inline-block; /* Affiche l'étiquette sur la même ligne que la case à cocher */
+  margin-bottom: 0; /* Pas d'espace en dessous de l'étiquette */
+}
+.lienInscription {
+  margin-top: 20px; /* Espace au-dessus de la section */
+  font-size: 14px; /* Taille du texte */
+}
+
+.lienInscription p {
+  margin-bottom: 8px; /* Espace sous le paragraphe */
+
+  font-weight: 400; /* Poids du texte du paragraphe */
+}
+
+.lienInscription a {
+  display: inline-block; /* Rend le lien cliquable sur toute sa surface */
+
+  font-weight: 600; /* Texte du lien légèrement plus gras */
+  text-decoration: none; /* Supprime le soulignement */
+  transition: color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.lienInscription a:hover {
+  color: #3e1f7d; /* Couleur plus sombre au survol */
+  text-decoration: underline; /* Ajout du soulignement au survol */
+}
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 50%;
+  background: #0077b0;
+  color: white;
+  position: fixed; /* Fixe l'élément sur l'écran */
+  left: 0; /* Colle à gauche */
+  top: 50%; /* Centre verticalement */
+  transform: translateY(-50%); /* Ajuste pour un centrage parfait */
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+.siedebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li i {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul .active {
+  background: #b9d9e9;
+}
+.main-content,
+.sidebar {
+  display: inline-block;
+}
+/* Contenu principal */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  background: #f4f4f4;
+  min-height: 100vh;
+  position: relative;
+}
+
+.titre {
+  background: #0073b7;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.bouton_form {
+  background: #0073b7;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bouton_form:hover {
+  background: #005f8c;
+}
+
+/* Déconnexion */
+.textdeconnexion {
+  margin-top: 20px;
+}
+
+.deconnexion {
+  background: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
